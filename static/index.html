@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="./static/favicon.ico">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Wbiokr</title>
+    <!-- <link rel="shortcut icon" href="<%= htmlWebpackPlugin.options.ico %>"> -->
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.style %>">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+    　　<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <script>
+        if(navigator.appVersion.indexOf('MSIE 9.0')>-1){
+            alert('请下载高版本浏览器，已获得更好浏览体验！')
+        }
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="<%= htmlWebpackPlugin.options.polyfill %>"></script>    
+    <script src="<%= htmlWebpackPlugin.options.react %>"></script>    
+    <script src="<%= htmlWebpackPlugin.options.reactDOM %>"></script>    
+    <!-- <script src="<%= htmlWebpackPlugin.options.moment %>"></script>     -->
+    <script src="<%= htmlWebpackPlugin.options.app %>"></script>
+</body>
+</html>
